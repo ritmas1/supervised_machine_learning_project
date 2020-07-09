@@ -15,7 +15,7 @@ from warnings import simplefilter
 simplefilter(action='ignore', category=FutureWarning)
 
 
-classifiers=['knn','rf','ann'] # possible classifiers 
+	classifiers=['knn','rf']#,'ann'] # possible classifiers 
 
 n_components_list=[2,3,4,5,6,9,10,15,30,70]
 dim_red_list=['PCA','LDA','PCA+LDA']
@@ -46,23 +46,3 @@ with open('out.txt','w+') as out:
             errors = err.read()
   
             
-  
-
-
-            
-"""     
-# ignore all future warnings       
-
-simplefilter(action='ignore', category=FutureWarning)
-	           
-clf=['knn']
-classifiers=['knn','rf']
-#pop_(clf,classifiers)
-    
-example=Classification(combinations[1][0],combinations[1][1],combinations[1][2],pop_(clf,classifiers),pop_(clf,classifiers) ,pop_(clf,classifiers))
-example.classifiers
-
-example.split()
-example.classification_process()
-example.save()
-"""    
